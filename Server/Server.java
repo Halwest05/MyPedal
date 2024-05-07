@@ -13,6 +13,8 @@ public class Server {
         DatagramSocket socket = new DatagramSocket(6969);
         Robot robot = new Robot();
 
+	  System.out.println("\nThis is the pedal system made by halwest!\n\n");
+
         while(true){
             byte[] buf = new byte[256];
             DatagramPacket packet = new DatagramPacket(buf, buf.length);
@@ -21,14 +23,16 @@ public class Server {
 
             String text = new String(packet.getData());
 
-            System.out.println(text);
-
             if(text.contains("d")) {                                                              
                 robot.keyPress(KeyEvent.VK_ALT_GRAPH);
+
+		    System.out.println("Sustain pedal down");
             }
             
             else if(text.contains("u")) {
                 robot.keyRelease(KeyEvent.VK_ALT_GRAPH);
+
+		    System.out.println("Sustain pedal up");
             }
         }
 
