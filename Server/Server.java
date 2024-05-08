@@ -26,13 +26,13 @@ public class Server {
             if(text.contains("d")) {                                                              
                 robot.keyPress(KeyEvent.VK_ALT_GRAPH);
 
-		    System.out.println("Sustain pedal down");
+		    System.out.println("Down");
             }
             
             else if(text.contains("u")) {
                 robot.keyRelease(KeyEvent.VK_ALT_GRAPH);
 
-		    System.out.println("Sustain pedal up");
+		    System.out.println("Up");
             }
         }
 
