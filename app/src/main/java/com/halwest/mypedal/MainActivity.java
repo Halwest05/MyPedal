@@ -8,7 +8,6 @@ import android.os.StrictMode;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.EditText;
 
 import com.halwest.mypedal.R.id;
@@ -16,10 +15,7 @@ import com.halwest.mypedal.R.id;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.Inet4Address;
 import java.net.InetAddress;
-import java.net.SocketException;
-import java.net.UnknownHostException;
 
 public class MainActivity extends AppCompatActivity {
     @Override
