@@ -12,6 +12,7 @@ void main() {
       systemNavigationBarColor: Colors.black,
     ),
   );
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   runApp(const MyPedalApp());
 }
 
